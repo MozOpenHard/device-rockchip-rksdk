@@ -80,3 +80,7 @@
 /dev/rknand_sys_storage   0660   system     system 
 
 /dev/graphics/fb1	0666	root	graphics
+
+# for GPIO
+/sys/devices/virtual/gpio/gpio*   direction   0666   root       root
+/sys/devices/virtual/gpio/gpio*   value       0666   root       root
