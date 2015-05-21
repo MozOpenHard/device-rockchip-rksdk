@@ -84,3 +84,6 @@
 # for GPIO
 /sys/devices/virtual/gpio/gpio*   direction   0666   root       root
 /sys/devices/virtual/gpio/gpio*   value       0666   root       root
+
+# for I2C
+/dev/i2c*                 0666   root       root
