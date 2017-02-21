@@ -15,7 +15,7 @@ fi
 
 IMAGE_PATH=rockdev/Image
 
-rm -rf $IMAGE_PATH
+#rm -rf $IMAGE_PATH
 mkdir -p $IMAGE_PATH
 
 FSTYPE=`grep 'mtd@system' $OUT/root/init.$TARGET_HARDWARE.rc | head -n 1 | awk '{ print $2 }'`
@@ -75,11 +75,11 @@ fi
 	cp -a $OUT/recovery.img $IMAGE_PATH/
 	echo "done."
 
-	echo -n "create misc.img.... "
-	cp -a rkst/Image/misc.img $IMAGE_PATH/misc.img
-	cp -a rkst/Image/misc_wipe_all.img $IMAGE_PATH/misc_wipe_all.img
-	cp -a rkst/Image/pcba_whole_misc.img $IMAGE_PATH/pcba_whole_misc.img
-	echo "done."
+	#echo -n "create misc.img.... "
+	#cp -a rkst/Image/misc.img $IMAGE_PATH/misc.img
+	#cp -a rkst/Image/misc_wipe_all.img $IMAGE_PATH/misc_wipe_all.img
+	#cp -a rkst/Image/pcba_whole_misc.img $IMAGE_PATH/pcba_whole_misc.img
+	#echo "done."
 
 if [ -d $OUT/system ]
 then
