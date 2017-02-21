@@ -26,7 +26,7 @@ BOARD_EGL_CFG := device/rockchip/common/gpu/libpvr/egl.cfg
 endif
 
 TARGET_PROVIDES_INIT_RC ?= true
-ENABLE_DEFAULT_BOOTANIMATION := true
+
 TARGET_NO_KERNEL ?= false
 TARGET_NO_RECOVERY ?= false
 TARGET_ROCHCHIP_RECOVERY ?= true
